@@ -6,6 +6,8 @@ services:
      ports:
        - "80:80"
      restart: always
+     volumes:
+      - ./checkout:/var/www/html/wp-content/themes/checkout
      environment:
        WORDPRESS_DB_HOST: host.docker.internal:3306
        WORDPRESS_DB_USER: root
