@@ -1,21 +1,19 @@
 <?php get_header(); ?>
+
 <!-- Body Content here -->
+<body <?php body_class(); ?>>
 <!-- Main Container -->
 <main>
   <div class="container">
       <!-- Begin Step 1 -->
-      <h2 class="py-3 title-join">
-        <div id="sidebar-landing" class="sidebar">
-                <?php if ( is_active_sidebar( 'landing' ) ) : ?>
-                    <?php dynamic_sidebar( 'landing' ); ?>
-                <?php else : ?>
-                    <!-- Time to add some widgets! -->
-                <?php endif; ?>
-        </div>
-      </h2>      
+
+      <!-- Main Page Heading -->
+        <?php get_sidebar( 'heading' ); ?>
+      <!-- Main Page Heading -->
       <div class="row step-one">
             <div class="col-sm-6 v-line">
-                <p>Please select the option that best describes you:</p>
+                <!-- Form Heading -->
+                <?php get_sidebar( 'form' ); ?>
                 <form id="h10-form">
                     <div class="form-group">
                         <div class="h10-radio">
@@ -63,26 +61,12 @@
             </div>
 
             <div class="col-sm-6 sidebar">
-                <p>This is your opportunity to take your business to the next level (or to get started).</p>
-                    <p>
-                        <strong>Join Helium 10 by Wednesday, July 17 at 11:59 p.m. PST for 75% off your first month (It'll be $97 afterward).</strong>
-                    </p>
-                    <p>
-                            Whether you're a beginner looking for a product, an advanced seller looking to get ahead, 
-                            or a business looking for better management solutions, 
-                            Helium 10 has everything you need to sell on Amazon.
-                    </p>
-                    <p>    
-                            Our all-in-one software suite is designed to help you save time, manage your business better, and make better decisions through accurate data and analytics. 
-                            From product research down to refunds and automated email communication, get clear advantages across your entire sales pipeline.
-                    </p>
-                   
-                    
-
+                <?php get_sidebar( 'textblock' ); ?>
             </div>
         </div>
         <!-- End Step 1 -->
-        <!-- End Step 2 -->
+
+        <!-- Begin Step 2 -->
         <div class="row step-two d-none">
             <div class="col-sm-6 v-line">
                 <div class="form-group"><span class="h10-label">User:</span>
@@ -113,22 +97,10 @@
                 </div>
             </div>
             <div class="col-sm-6 sidebar">
-                    <p>This is your opportunity to take your business to the next level (or to get started).</p>
-                    <p>
-                        <strong>Join Helium 10 by Wednesday, July 17 at 11:59 p.m. PST for 75% off your first month (It'll be $97 afterward).</strong>
-                    </p>
-                    <p>
-                            Whether you're a beginner looking for a product, an advanced seller looking to get ahead, 
-                            or a business looking for better management solutions, 
-                            Helium 10 has everything you need to sell on Amazon.
-                    </p>
-                    <p>    
-                            Our all-in-one software suite is designed to help you save time, manage your business better, and make better decisions through accurate data and analytics. 
-                            From product research down to refunds and automated email communication, get clear advantages across your entire sales pipeline.
-                    </p>
-                                   
+                <?php get_sidebar( 'textblock' ); ?>              
+            </div>
         </div>
-        </div>
+        <!-- End Step 2 -->
 
 
         <div class="row step-three d-none" style="margin-top:40px">

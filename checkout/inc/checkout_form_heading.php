@@ -1,25 +1,25 @@
 <?php
 // Creating the widget 
-class checkout_main_heading extends WP_Widget {
+class checkout_form_heading extends WP_Widget {
  
 function __construct() {
 parent::__construct(
  
 // Base ID of your widget
-'checkout_main_heading', 
+'checkout_form_heading', 
  
 // Widget name will appear in UI
-__('Edit the Main Header', 'checkout-heading'), 
+__('Edit the Form Header', 'checkout-form'), 
  
 // Widget description
-array( 'description' => __( 'Edit the main page heading text.', 'checkout-heading' ), ) 
+array( 'description' => __( 'Edit the form heading text.', 'checkout-form' ), ) 
 );
 }
 
 
 // Creating widget front-end
 public function widget( $args, $instance ) {
-    $title = apply_filters( 'checkout_main_heading', $instance['title'] );
+    $title = apply_filters( 'checkout_form_heading', $instance['title'] );
      
     // before and after widget arguments are defined by themes
     echo $args['before_widget'];
@@ -36,7 +36,7 @@ public function widget( $args, $instance ) {
     $title = $instance[ 'title' ];
     }
     else {
-    $title = __( 'New page heading', 'checkout-heading' );
+    $title = __( 'Select an option', 'checkout-form' );
     }
     // Widget admin form
     ?>

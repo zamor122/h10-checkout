@@ -1,25 +1,25 @@
 <?php
 // Creating the widget 
-class checkout_main_heading extends WP_Widget {
+class checkout_textblock_wording extends WP_Widget {
  
 function __construct() {
 parent::__construct(
  
 // Base ID of your widget
-'checkout_main_heading', 
+'checkout_textblock_wording', 
  
 // Widget name will appear in UI
-__('Edit the Main Header', 'checkout-heading'), 
+__('Edit the Form Header', 'textblock-wording'), 
  
 // Widget description
-array( 'description' => __( 'Edit the main page heading text.', 'checkout-heading' ), ) 
+array( 'description' => __( 'Edit the text block to the right of the sign up form.', 'textblock-wording' ), ) 
 );
 }
 
 
 // Creating widget front-end
 public function widget( $args, $instance ) {
-    $title = apply_filters( 'checkout_main_heading', $instance['title'] );
+    $title = apply_filters( 'checkout_textblock_wording', $instance['title'] );
      
     // before and after widget arguments are defined by themes
     echo $args['before_widget'];
@@ -36,15 +36,8 @@ public function widget( $args, $instance ) {
     $title = $instance[ 'title' ];
     }
     else {
-    $title = __( 'New page heading', 'checkout-heading' );
+    $title = __( 'Some wording', 'textblock-wording' );
     }
-    // Widget admin form
-    ?>
-    <p>
-    <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Main Heading:' ); ?></label> 
-    <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
-    </p>
-    <?php 
     }
          
     // Updating widget replacing old instances with new
