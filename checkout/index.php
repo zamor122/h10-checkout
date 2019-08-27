@@ -1,10 +1,18 @@
 <?php get_header(); ?>
-
-
 <!-- Body Content here -->
+<!-- Main Container -->
 <main>
   <div class="container">
-      <h2 class="py-3 title-join">Welcome to your Prime Day level-up</h2>      
+      <!-- Begin Step 1 -->
+      <h2 class="py-3 title-join">
+        <div id="sidebar-landing" class="sidebar">
+                <?php if ( is_active_sidebar( 'landing' ) ) : ?>
+                    <?php dynamic_sidebar( 'landing' ); ?>
+                <?php else : ?>
+                    <!-- Time to add some widgets! -->
+                <?php endif; ?>
+        </div>
+      </h2>      
       <div class="row step-one">
             <div class="col-sm-6 v-line">
                 <p>Please select the option that best describes you:</p>
@@ -53,6 +61,7 @@
                     <input type="hidden" name="plan" value="Helium10_Platinum" id="plan">
                 </form>
             </div>
+
             <div class="col-sm-6 sidebar">
                 <p>This is your opportunity to take your business to the next level (or to get started).</p>
                     <p>
@@ -72,6 +81,8 @@
 
             </div>
         </div>
+        <!-- End Step 1 -->
+        <!-- End Step 2 -->
         <div class="row step-two d-none">
             <div class="col-sm-6 v-line">
                 <div class="form-group"><span class="h10-label">User:</span>
