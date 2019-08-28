@@ -1,4 +1,4 @@
-<footer class="fixed-bottom text-center footer-text">
+<footer class="fixed-bottom text-center footer-text border m-0 p-0">
 <a href="https://www.helium10.com/terms-of-use/">Terms &amp; Conditions</a> | <a href="https://www.helium10.com/privacy-policy/">Privacy Policy</a> | <a href="https://crushit.online/">Affiliates</a> | <a href="https://www.helium10.com/support/">Support</a>  
     </footer>
     <?php wp_footer(); ?>

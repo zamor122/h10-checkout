@@ -1,3 +1,3 @@
-<div id="sidebar-heading" class="sidebar textblock">
+<div id="sidebar-textblock" class="sidebar">
     <?php dynamic_sidebar( 'textblock' ); ?>
 </div>

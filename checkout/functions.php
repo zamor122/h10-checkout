@@ -33,7 +33,7 @@ function checkout_sidebars() {
     register_sidebar(
         array(
             'id'            => 'heading',
-            'name'          => __( 'Edit Main Header' ),
+            'name'          => __( 'Edit main header' ),
             'description'   => __( 'This sidebar allows you to edit the main header.' ), 
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
@@ -46,7 +46,7 @@ function checkout_sidebars() {
     register_sidebar(
         array(
             'id'            => 'form',
-            'name'          => __( 'Edit Form Header' ),
+            'name'          => __( 'Edit form header' ),
             'description'   => __( 'This sidebar allows you to edit the main header.' ), 
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
@@ -59,7 +59,7 @@ function checkout_sidebars() {
     register_sidebar(
         array(
             'id'            => 'textblock',
-            'name'          => __( 'Edit Info Textblock' ),
+            'name'          => __( 'Edit info textblock' ),
             'description'   => __( 'This sidebar allows you to edit the block of text to the right oof the sign up form.' ), 
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
@@ -80,8 +80,8 @@ $defaults = array(
     'default-color'          => 'transparent',
     'default-image'          => '',
     'default-repeat'         => 'no-repeat',
-    'default-position-x'     => 'left',
-    'default-position-y'     => 'top',
+    'default-position-x'     => 'center',
+    'default-position-y'     => 'center',
     'default-size'           => 'auto',
     'default-attachment'     => 'scroll',
     'wp-head-callback'       => '_custom_background_cb',

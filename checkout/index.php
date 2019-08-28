@@ -3,8 +3,7 @@
 <!-- Body Content here -->
 <body <?php body_class(); ?>>
 <!-- Main Container -->
-<main>
-  <div class="container">
+  <div class="container p-5">
       <!-- Begin Step 1 -->
 
       <!-- Main Page Heading -->
@@ -93,11 +92,11 @@
                 <div class="form-group text-muted" style="margin-top: 40px">
                     *IMPORTANT: Please note that your first month with the Helium 10 Platinum Plan will cost only $24.25. 
                     However, after the first month your Platinum Plan subscription will cost $97 for the second month and all months thereafter.
-
                 </div>
             </div>
-            <div class="col-sm-6 sidebar">
-                <?php get_sidebar( 'textblock' ); ?>              
+
+            <div class="col-sm-6 sidebar textblock">
+                <div id="sidebar-textblock-two"></div>             
             </div>
         </div>
         <!-- End Step 2 -->
@@ -120,6 +119,11 @@
      
                     </div>
             </div>
-  </div>
-</main>
+</div>
 <?php get_footer(); ?>
+
+<script>
+var firstDivContent = document.getElementById('sidebar-textblock');
+var secondDivContent = document.getElementById('sidebar-textblock-two');
+secondDivContent.innerHTML = firstDivContent.innerHTML;
+</script>
