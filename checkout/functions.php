@@ -89,3 +89,8 @@ $defaults = array(
     'admin-preview-callback' => ''
 );
 add_theme_support( 'custom-background', $defaults );
+
+//Add classes to body class
+add_filter('body_class', function($classes){
+    return array_merge($classes, array('flex-xl-fill,'));
+});

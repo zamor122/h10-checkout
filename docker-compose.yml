@@ -8,6 +8,7 @@ services:
      restart: always
      volumes:
       - ./checkout:/var/www/html/wp-content/themes/checkout
+      - /var/www/html/wp-content/uploads
      environment:
        #WORDPRESS_DB_HOST: host.docker.internal:3306
        #WORDPRESS_DB_USER: root

@@ -1,9 +1,8 @@
 <?php get_header(); ?>
-
 <!-- Body Content here -->
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> style="height: 100%;">
 <!-- Main Container -->
-  <div class="container p-5">
+  <div class="container">
       <!-- Begin Step 1 -->
 
       <!-- Main Page Heading -->
