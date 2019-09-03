@@ -2,6 +2,7 @@ version: '3.3'
 
 services:
    wordpress:
+     container_name: h10-checkout
      image: wordpress:latest
      ports:
        - "80:80"
@@ -10,11 +11,11 @@ services:
       - ./checkout:/var/www/html/wp-content/themes/checkout
       - /var/www/html/wp-content/uploads
      environment:
-       #WORDPRESS_DB_HOST: host.docker.internal:3306
-       #WORDPRESS_DB_USER: root
-       #WORDPRESS_DB_PASSWORD: Helium 10
-       #WORDPRESS_DB_NAME: wordpress
-       WORDPRESS_DB_HOST: testtransactions.czjdvdhklz8a.us-east-2.rds.amazonaws.com
-       WORDPRESS_DB_USER: tester
-       WORDPRESS_DB_PASSWORD: tester1234
-       WORDPRESS_DB_NAME: devdb
+       WORDPRESS_DB_HOST: host.docker.internal:3306
+       WORDPRESS_DB_USER: root
+       WORDPRESS_DB_PASSWORD: Helium 10
+       WORDPRESS_DB_NAME: wordpress
+       #WORDPRESS_DB_HOST: testtransactions.czjdvdhklz8a.us-east-2.rds.amazonaws.com
+       #WORDPRESS_DB_USER: tester
+       #WORDPRESS_DB_PASSWORD: tester1234
+       #WORDPRESS_DB_NAME: devdb

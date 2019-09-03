@@ -51,7 +51,7 @@
                     <div class="validation-error"
                          style="display: none; color: #c00; margin-bottom: 15px; font-size: 12px;"></div>
                     <div class="form-group text-right">
-                        <button class="btn btn-primary" type="submit" id="review-order-btn">Review your order</button>
+                        <button class="btn btn-primary" type="submit" id="review-order-btn" style="background-color: #0380FF;">Review your order</button>
                     </div>
                     <input type="hidden" name="coupon" value="PRIMEDAY" id="coupon">
                     <input type="hidden" name="plan" value="Helium10_Platinum" id="plan">
@@ -81,8 +81,8 @@
                      style="display: none; color: #c00; margin-bottom: 15px; font-size: 12px;"></div>
                 <div class="action-buttons">
                     <div class="form-group text-right pt-3">
-                        <button class="btn btn-light" type="button" id="back-btn">Back</button>
-                        <button class="btn btn-primary ml-2" type="button" id="pay-btn">Pay</button>
+                        <button class="btn btn-dark" type="button" id="back-btn" style="'background-color: #2A2D34">Back</button>
+                        <button class="btn btn-primary ml-2" type="button" id="pay-btn" style="background-color: #0380FF;">Pay</button>
                     </div>
                     <div class="text-right"><a class="change-payment" href="#" style="display: none;">Change Payment
                         Method</a></div>
