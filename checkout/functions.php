@@ -67,19 +67,6 @@ function checkout_sidebars() {
             'after_title'   => '</p>',
         )
     );
-
-    /* Register the sidebar for the Checkout Button */
-    register_sidebar(
-        array(
-            'id'            => 'textblock',
-            'name'          => __( 'Edit checkout button text' ),
-            'description'   => __( 'This sidebar allows you to edit the block of text to the right oof the sign up form.' ), 
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '<p>',
-            'after_title'   => '</p>',
-        )
-    );
 }
 
 add_action('widgets_init', 'register_all_widgets');
